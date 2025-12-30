@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+    background-color: #333b3b;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+
+.cardcol1,
+.cardcol2,
+.cardcol3 {
+  border-radius: 12px;
+}
+
+
+.cardcol1 {
+    background-color: #7a8092;
+
+
+}
+
+.cardcol2 {
+    background-color: #BCC1C8;
+
+
+}
+
+.cardcol3 {
+    background-color: #7a8092;
+
+
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px !important; 
+
+  }
+}
