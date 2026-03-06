@@ -16,7 +16,7 @@ function App() {
     company: "Silver Edge Corporation",
     details: [
       "Designed, developed, and deployed the company website, upgrading it from an outdated Wix platform to a modern and responsive ReactJS website, ensuring user-friendly interfaces and optimal user experience.",
-      " Collaborated with stakeholders on new features and design.",
+      "Collaborated closely with the client to gather requirements, address concerns, and incorporate feedback throughout the website design and development process.",
     ],
   };
   const GDSC = {
