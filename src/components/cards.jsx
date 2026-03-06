@@ -1,4 +1,4 @@
-const ProjectCard = ({title, description, link, src}) => {
+const ProjectCard = ({ title, description, link, src }) => {
   return (
     <div className="bg-[#222222] rounded-2xl p-6 shadow-lg shadow-black/30 hover:shadow-black/50 transition-shadow flex flex-col">
       <h2 className="text-3xl text-white bebas mb-4">{title}</h2>
@@ -16,13 +16,19 @@ const ProjectCard = ({title, description, link, src}) => {
   );
 };
 
-const ExperienceCard = ({position, time, company, details}) => {
+const ExperienceCard = ({ position, time, company, details }) => {
   return (
     <div className="p-4 flex flex-col mb-4">
       <p className="text-white text-xl">{position}</p>
       <p className="text-[#C7C7C7] text-lg">{time}</p>
       <p className="text-[#D3E97A] text-lg font-medium">{company}</p>
-      <p className="text-[#C7C7C7] text-lg pt-2">{details}</p>
+      <ul className="list-disc list-outside pl-6 text-[#C7C7C7] text-lg pt-2 p-3 space-y-2">
+        {details.map((detail, index) => (
+          <li key={index} className="text-justify">
+            {detail}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
@@ -31,4 +37,4 @@ const LangCards = (color) => {
   return <div></div>;
 };
 
-export {ProjectCard, ExperienceCard};
+export { ProjectCard, ExperienceCard };

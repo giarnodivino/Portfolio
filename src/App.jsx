@@ -1,10 +1,10 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./styles/App.css";
 import Navbar from "./layouts/Navbar.jsx";
 import ContactButton from "./components/buttons.jsx";
-import {LinkedIn, Github, Tailwind, Django, JavaScript, Python, HTML, CSS, ReactJS} from "./components/svg-icons.jsx";
+import { LinkedIn, Github, Tailwind, Django, JavaScript, Python, HTML, CSS, ReactJS } from "./components/svg-icons.jsx";
 import Me from "./assets/images/pic2.jpeg";
-import {ProjectCard, ExperienceCard} from "./components/cards.jsx";
+import { ProjectCard, ExperienceCard } from "./components/cards.jsx";
 import Proj1 from "./assets/images/jnfsample.png";
 import Proj2 from "./assets/images/objdetect.png";
 
@@ -15,7 +15,7 @@ function App() {
     time: "Aug 2025 - Dec 2025",
     company: "Silver Edge Corporation",
     details: [
-      "Developed the company website using ReactJS and Tailwind CSS.",
+      "Designed, developed, and deployed the company website, upgrading it from an outdated Wix platform to a modern and responsive ReactJS website, ensuring user-friendly interfaces and optimal user experience.",
       " Collaborated with stakeholders on new features and design.",
     ],
   };
