@@ -1,7 +1,7 @@
 function ContactButton() {
   return (
     <a
-      href="#contact"
+      href="mailto:divinogiarno7@gmail.com"
       className="inline-flex items-center justify-between gap-3 px-4 py-2 rounded-full bg-[#C4C4C4] text-black font-normal hover:opacity-90 transition-opacity w-fit"
     >
       <span>CONTACT ME</span>
