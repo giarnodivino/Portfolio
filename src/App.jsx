@@ -5,8 +5,9 @@ import ContactButton from "./components/buttons.jsx";
 import { LinkedIn, Github, Tailwind, Django, JavaScript, Python, HTML, CSS, ReactJS } from "./components/svg-icons.jsx";
 import Me from "./assets/images/pic2.jpeg";
 import { ProjectCard, ExperienceCard } from "./components/cards.jsx";
-import Proj1 from "./assets/images/jnfsample.png";
+import Proj1 from "./assets/images/jnfsample2.png";
 import Proj2 from "./assets/images/objdetect.png";
+import Proj3 from "./assets/images/TenantManagement.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -83,11 +84,11 @@ function App() {
       <section id="projects">
         <div className="md:p-4 lg:m-40">
           <h1 className="text-4xl text-white bebas ml-4 mt-10 mb-5 lg:text-5xl">FEATURED PROJECTS</h1>
-          <div className="p-4 flex flex-col gap-4 md:grid md:grid-cols-2">
+          <div className="p-4 grid grid-cols-1 gap-4 justify-items-center md:grid-cols-2 xl:grid-cols-3 max-w-6xl mx-auto">
             <ProjectCard
               title="J&F Divino Website"
               description="Developed a responsive website for J&F Divino, a family-owned business, using ReactJS and Tailwind CSS to enhance their online presence and customer engagement."
-              link="https://github.com/giarnodivino/jnf-react"
+              link="https://jfdivino.com/"
               src={Proj1}
             />
             <ProjectCard
@@ -95,6 +96,13 @@ function App() {
               description="Created an object detection system using YOLOv5 and OpenCV to identify and track objects in real-time video feeds."
               link="https://github.com/giarnodivino/counter-project"
               src={Proj2}
+            />
+            <ProjectCard
+              title="Tenant Billing System"
+              description="Developed a comprehensive tenant billing system to streamline the management of rental properties and automate generation of Statement of Accounts (SOAs)."
+              link="https://github.com/giarnodivino/leaseManager"
+              src={Proj3}
+              className="md:col-span-2 md:max-w-md lg:col-span-1"
             />
           </div>
         </div>
